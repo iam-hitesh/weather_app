@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Today's Weather</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron top">
+                <h1>Today's Weather</h1>
+                <hr class="short">
+                <h2 id="weather">Loading...</h2>
+            </div>
+        </div>
+        <div class="row text">
+            <div class="col-sm-12 text-center grey-jumbo">
+                <div class="text-center">
+                    <h3 id="tagline"></h3>
+                </div>
+                <hr class="below">
+                <div class="col-sm-4">
+                    <h3 id="time"></h3>
+                    <hr class="short">
+                    <h3 id="wind"></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3 id="temp"></h3>
+                    <button id="switch" class="btn btn-primary">Show in Fahrenheit</button>
+                </div>
+                <div class="col-sm-4">
+                    <h3 id="sky"></h3>
+                    <hr class="short">
+                    <h3 id="humidity"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container black">
+      <div class="row">
+        <div class="col-sm-8">
+          Developed by <a href="https://facebook.com/ihiteish" target="_BLANK">Hitesh Yadav</a> | API used from <a href="http://apixu.com" target="_BLANK">apixu.com</a>
+        </div>
+        <div class="col-sm-4">
+          Last Updated on <span id="last_update"></span>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
