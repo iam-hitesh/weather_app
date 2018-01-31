@@ -6,7 +6,7 @@ $(document).ready(function(){
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
 
-      var url = 'http://api.apixu.com/v1/current.json?key=bf8b4da2346c425c947102440183101&q=';
+      var url = 'https://api.apixu.com/v1/current.json?key=bf8b4da2346c425c947102440183101&q=';
 
       $.getJSON(url+latitude+','+longitude,function(data){
         var data = JSON.stringify(data);
